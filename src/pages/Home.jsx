@@ -1,0 +1,110 @@
+import React from 'react'
+import Menu from '../components/Menu/Menu'
+import '../styles/home.scss'
+
+import boy from '../assets/blackboy.png'
+import resist from '../assets/DecorationMid.png'
+
+import unicamp from '../assets/unicamp.png'
+import usp from '../assets/usp.png'
+import ufscar from '../assets/ufscar.png'
+import enem from '../assets/enem.jpg'
+import cotuca from '../assets/cotuca.png'
+import etec from '../assets/etec.jpg'
+import foto from '../assets/cotuca.png'
+
+import Button from '../components/Button/Button'
+import Card from '../components/Card/Card'
+import Faixa from '../components/Faixa/Faixa'
+
+const cards = [
+    {
+        icon: foto,
+        title: 'Planos de Estudos',
+        description: 'Auxiliamos os estudantes a montarem seus planos de estudos baseados em suas necessidades.',
+    },
+    {
+        icon: foto,
+        title: 'Aulas de Qualidade',
+        description: 'Aulas presenciais de todas as disciplinas dos principais vestibulares, atualizadas e com professores atestados.',
+    },
+    {
+        icon: foto,
+        title: 'Ambiente amigável',
+        description: 'Ambiente que incentiva boa convivência, educação, respeito e a não competitividade, promovendo um melhor cenário para estudos.',
+    },
+    {
+        icon: foto,
+        title: 'Tecnologia e Educação',
+        description: 'Uso da tecnologia para realizar monitoramento, acompanhamento e melhoraria na base educacional dos estudantes.',
+    }]
+
+function Home() {
+    return (
+        <div className='container'>
+            
+            <Faixa />
+
+            <Menu />
+
+            <div className='home-top'>
+                
+                <div className='home-top-content'>
+
+                    <span className='home-call'>"Pela difusão do pensamento crítico."</span>
+                    <span className='home-title'>A educação é o nosso maior instrumento de luta. Venha lutar conosco!</span>
+                    <span className='home-subtitle'>Prezamos por um ensino, educação e convivência de qualidade para que juntos possamos conquistar nossos espaços.</span>
+
+                    <div className='home-top-buttons'>
+                        <Button text="Inscrever-se" style="full big"/>
+                        <Button text="Conhecer" style="outline big"/>
+                    </div>
+
+                </div>
+
+                <div className='home-top-img'>
+                    <img src={boy} className="home-img" alt="" />
+                    <div className='square'></div>
+                </div>
+
+            </div>
+
+            <div className='home-mid'>
+
+                <div className='home-mid-content'>
+                    <span className='text-call'>Lute conosco.</span>
+                    <span className='home-mid-title'>Seu <span className='red'>lugar</span> é na <span className='red'>Universidade!</span></span>
+                    <span className='home-mid-text'>
+                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer aws ferramentas para que possam buscar seus objetivos individuais e coletivos.
+                    </span>
+                    <span className='text-call'>Seu lugar está aqui:</span>
+
+                    <div className='logos-universidades'>
+
+                        <img className="logo-universidade" alt="" />
+                        <img className="logo-universidade" alt="" />
+                        <img className="logo-universidade" alt="" />
+                        <img className="logo-universidade" alt="" />
+                        <img className="logo-universidade" alt="" />
+                        <img className="logo-universidade" alt="" />
+
+                    </div>
+
+                    <span className='text-call'>E muito mais.</span>
+                    
+                    <span className='home-mid-text'>
+                        Nossa história é desenhada por lutas e objetivos extensos, onde cada estudante, professor ou colaborador escreva uma nova página sobre o futuro do projeto, conheça nossa história e escreva sua página também.
+                    </span>
+
+                    <Button text="Conhecer" style="outline big"/>
+
+                    <img src={resist} className="resist-logo"/>
+                </div>
+
+            </div>
+
+        </div>
+    )
+}
+
+export default Home

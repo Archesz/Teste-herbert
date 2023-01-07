@@ -1,0 +1,52 @@
+$mainColor: #F8333C;
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 99;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+
+    &:hover{
+        transition: .4s;
+    }
+
+    .menu-logo{
+        width: 70%;
+        cursor: pointer;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 30%;
+
+        .menu-item{
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            
+            &:hover{
+                transition: .4s;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.menu-faixa{
+    margin-top: 60px;
+}
+
+.menuStick{
+    margin-top: 0px;
+}

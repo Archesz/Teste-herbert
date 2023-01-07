@@ -1,0 +1,132 @@
+$mainColor: #F8333C;
+
+.red{
+    color: $mainColor;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+.home-top{
+    background-image: url("../assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    align-items: center;
+
+    .home-top-content{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        .home-call{
+            color: white;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .home-title{
+            font-size: 54px;
+            color: white;
+        }
+
+        .home-subtitle{
+            color: white;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .home-top-buttons{
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+    }
+
+    .home-top-img{
+        height: 100%;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .home-img{
+            z-index: 5;
+        }
+
+        .square{
+            width: 320px;
+            height: 980px;
+            position: absolute;
+            border: 4px solid #FE9920;
+            background-color: #FE9920;
+            z-index: 1;
+            rotate: 50deg;
+            margin-left: 180px;
+            margin-bottom: -300px;
+            box-shadow: -4px -8px 6px black;
+            filter: blur(2px);
+        }
+
+    }
+}
+
+.home-mid{
+    z-index: 5;
+    background-image: url('../assets/background2.png');
+    background-size: cover;
+}
+
+.home-mid-content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 0px 100px;
+    background-color: rgba(255, 255, 255, 0.85);
+
+    .text-call{
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+    }
+
+    .home-mid-title{
+        font-size: 60px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+
+    .home-mid-text{
+        font-size: 22px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .logos-universidades{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 120px;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 15px;
+
+        .logo-universidade{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .resist-logo{
+        justify-self: flex-end;
+    }
+}

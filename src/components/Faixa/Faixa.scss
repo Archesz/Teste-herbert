@@ -1,0 +1,41 @@
+.faixa-container{
+    height: 60px;
+    background-color: #E83800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .faixa-time{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        margin-right: 20px;
+        justify-content: space-around;
+
+        .time-field{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .time-value{
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .time-label{
+                font-weight: bolder;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .faixa-text{
+        font-weight: bold;
+        font-size: 16px;
+    }
+}

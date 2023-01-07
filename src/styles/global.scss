@@ -1,0 +1,20 @@
+$mainColor: #F8333C;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+

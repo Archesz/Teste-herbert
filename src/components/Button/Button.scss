@@ -1,0 +1,41 @@
+$mainColor: #F8333C;
+$secondColor: white;
+
+.btn{
+    border: none;
+    background: none;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.full{
+    background-color: $mainColor;
+    color: $secondColor;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+    &:hover{
+        transition: .4s;
+        background-color: white;
+        color: $mainColor;
+    }
+}
+
+.outline{
+    border: 3px solid $mainColor;
+    color: $mainColor;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+    &:hover{
+        transition: .4s;
+        background-color: $mainColor;
+        color: white;
+    }
+}
+
+.big{
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+}

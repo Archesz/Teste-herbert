@@ -1,0 +1,33 @@
+ .card{
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    background-color: #313335;
+    padding: 20px;
+
+    &:hover{
+        transition: .4s;
+        transform: translateY(-10px) translateX(10px);
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
+
+    h2{
+        color: white;
+        font-weight: bolder;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    p{
+        margin-top: 10px;
+        color: #929598;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
