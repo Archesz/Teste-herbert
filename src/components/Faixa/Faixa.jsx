@@ -39,7 +39,7 @@ setInterval(updateTime, 1000);
 
 function Faixa() {
   return (
-    <div className='faixa-container'>
+    <div className='faixa-container' id='faixa'>
             
           <div className='faixa-time'>
 

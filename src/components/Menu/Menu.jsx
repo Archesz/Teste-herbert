@@ -6,19 +6,12 @@ import logo from '../../assets/logo.png'
 window.onscroll = function(){
     let posY = window.scrollY;
     let menu = document.querySelector("#menu");
-    let items = Array.from(document.querySelectorAll(".menu-item"))
     
     if(posY >= 40){
         menu.style.marginTop = '0px'
     } else if(posY < 40){
         menu.style.marginTop = '60px'
     } 
-
-    if(posY < 700){
-        items.map((item) => {
-            item.style.color = 'white'
-        })
-    }
 
     else if(posY >= 700 && posY < 1200){
 
@@ -27,6 +20,10 @@ window.onscroll = function(){
     }
     
     // console.log(`Posição Y: ${window.scrollY}`)
+}
+
+function menuEnter(){
+    alert('ok')
 }
 
 function Menu() {
@@ -38,11 +35,11 @@ function Menu() {
             </div>
 
             <div className='menu-items'>
-                <span className='menu-item'>Home</span>
-                <span className='menu-item'>Projetos</span>
-                <span className='menu-item'>História</span>
-                <span className='menu-item'>Contato</span>
-                <span className='menu-item'>Inscrição</span>
+                <span className='menu-item' onClick={menuEnter}>Home</span>
+                <span className='menu-item' onClick={menuEnter}>História</span>
+                <span className='menu-item' onClick={menuEnter}>Projetos</span>
+                <span className='menu-item' onClick={menuEnter}>Contato</span>
+                <span className='menu-item' onClick={menuEnter}>Inscrição</span>
             </div>
 
         </div>

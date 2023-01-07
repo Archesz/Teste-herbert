@@ -14,10 +14,6 @@ $mainColor: #F8333C;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
 
-    &:hover{
-        transition: .4s;
-    }
-
     .menu-logo{
         width: 70%;
         cursor: pointer;
@@ -43,10 +39,3 @@ $mainColor: #F8333C;
     }
 }
 
-.menu-faixa{
-    margin-top: 60px;
-}
-
-.menuStick{
-    margin-top: 0px;
-}

@@ -8,14 +8,23 @@ import resist from '../assets/DecorationMid.png'
 import unicamp from '../assets/unicamp.png'
 import usp from '../assets/usp.png'
 import ufscar from '../assets/ufscar.png'
-import enem from '../assets/enem.jpg'
+import enem from '../assets/enem.png'
 import cotuca from '../assets/cotuca.png'
 import etec from '../assets/etec.jpg'
 import foto from '../assets/cotuca.png'
 
+import herbertLogo from '../assets/herbertLogo.png'
+
 import Button from '../components/Button/Button'
 import Card from '../components/Card/Card'
 import Faixa from '../components/Faixa/Faixa'
+import History from '../components/History/History'
+
+// Dados
+
+import Depoiments from '../Data/depoiments.json'
+
+const depoiments = Depoiments["Home"]
 
 const cards = [
     {
@@ -81,12 +90,12 @@ function Home() {
 
                     <div className='logos-universidades'>
 
-                        <img className="logo-universidade" alt="" />
-                        <img className="logo-universidade" alt="" />
-                        <img className="logo-universidade" alt="" />
-                        <img className="logo-universidade" alt="" />
-                        <img className="logo-universidade" alt="" />
-                        <img className="logo-universidade" alt="" />
+                        <img src={unicamp} className="logo-universidade" alt="" />
+                        <img src={usp} className="logo-universidade usp" alt="" />
+                        <img src={ufscar} className="logo-universidade" alt="" />
+                        <img src={enem} className="logo-universidade" alt="" />
+                        <img src={cotuca} className="logo-universidade" alt="" />
+                        <img src={etec} className="logo-universidade" alt="" />
 
                     </div>
 
@@ -99,6 +108,53 @@ function Home() {
                     <Button text="Conhecer" style="outline big"/>
 
                     <img src={resist} className="resist-logo"/>
+                </div>
+
+            </div>
+
+            <div className='home-midbot'>
+
+                <div className='home-history'>
+                    <span className='history-name'>Herbert Baobá</span>
+                    <span className='history-title'>Mudar o presente para construirmos as raízes do futuro!</span>
+                    <span className='history-subtitle'>Não são apenas números, cada nova pessoa que passa pelo Herbert deixa sua marca e sua história. Usamos essas histórias para construirmos raízes fortes para o futuro! </span>
+                    <span className='history-instruct'>Passe o mouse ou Clique sobre os cards para ler um pouco de quem passou por aqui.</span>
+                </div>
+
+                <div className='historys-field'>
+
+                    {depoiments.map((depoiment) => {
+                        return(
+                            <History nome={depoiment["Nome"]} universidade={depoiment["Universidade"]} curso={depoiment["Curso"]} depoimento={depoiment["Depoimento"]}/>
+                        )
+                    })}
+
+                </div>
+
+            </div>
+
+            <div className='home-projects'>
+                
+                <div className='projects-left'>
+                    
+                    <img src={herbertLogo} className="logo-projects"/>
+
+                    <span className='projects-title'>Para Todos</span>
+                    <span className='projects-resume'>
+                        O Herbert não é apenas um serviço para vestibulares, buscamos alcançar
+                        os principais pilares da sociedade e fornecer o máximo de apoio nas áreas
+                        que somos capacitados. Através de divulgação cultural, educacional, tecnológica
+                        e muitos outros projetos. 
+                        Aulas de programação, desenho, artesanato, preparatório para concursos e muito mais!
+                        Fique por dentro ou sugira ideias que ajudem a todos! 
+                    </span>
+
+                    <Button text="Projetos" style="outline big"/>
+
+                </div>
+
+                <div className='projects-right'>
+
                 </div>
 
             </div>
