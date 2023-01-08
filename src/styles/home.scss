@@ -138,6 +138,20 @@ $mainColor: #F8333C;
 .home-midbot{
     height: 90vh;
     background-color: #191A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .more{
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+        text-shadow: 2px 2px 4px white;
+
+        &:hover{
+            color: #F8333C;
+        }
+    }
 
     .home-history{
         display: flex;
@@ -254,5 +268,43 @@ $mainColor: #F8333C;
             flex-direction: column;
             justify-content: space-around;
         }
+    }
+}
+
+.faixa-end{
+    height: 45vh;
+    margin-top: 120px;
+    background-color: #d12932;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .faixa-end-name{
+        font-weight: bolder;
+        color: white;
+        font-size: 42px;
+    }
+
+    .faixa-end-subname{
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .faixa-end-contact{
+        color: white;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    .social-field{
+        width: 40%;
+        height: 50px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

@@ -25,6 +25,7 @@ import History from '../components/History/History'
 import Depoiments from '../Data/depoiments.json'
 import Badge from '../components/Badge/Badge'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
+import Social from '../components/Social/Social'
 
 const depoiments = Depoiments["Home"]
 
@@ -133,6 +134,8 @@ function Home() {
 
                 </div>
 
+                <span className='more'>Ver todos</span>
+
             </div>
 
             <div className='home-projects'>
@@ -197,10 +200,29 @@ function Home() {
             </div>
             
             <div className='faixa-end'>
-
                     
+                <span className='faixa-end-name'>Qual foi? Vai deixar mesmo essa oportunidade passar?</span>
+                <span className='faixa-end-subname'>Vamos juntos nessa jornada, conquistar seu espaço!</span>
+                
+                <Button text="Inscrever-se!" style="full big black"/>
+
+                <span className='faixa-end-contact'>Ou entre em contato conosco! Adorariamos ajudar com o que precisar</span>
+
+                <div className='social-field'>
+
+                    <Social social="facebook"/>
+                    <Social social="whatsapp"/>
+                    <Social social="linkedin"/>
+                    <Social social="instagram"/>
+                    <Social social="telefone"/>
+
+                </div>
 
             </div>
+
+            <footer className='footer'>
+
+            </footer>
 
         </div>
     )

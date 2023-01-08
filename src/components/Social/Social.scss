@@ -1,0 +1,36 @@
+.social-container{
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 6px black;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover;
+
+    &:hover{
+        transition: .4s;
+        filter: brightness(1.4);
+    }
+}
+
+.facebook{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png");
+}
+
+.whatsapp{
+    background-image: url("https://cdn.icon-icons.com/icons2/2429/PNG/512/whatsapp_logo_icon_147205.png");
+}
+
+.linkedin{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/640px-LinkedIn_icon_circle.svg.png");
+    background-color: white;
+}
+
+.telefone{
+    background-image: url("http://www2.ifam.edu.br/campus/eirunepe/arquivos/telefone-icon.png/@@images/image.png");
+}
+
+.instagram{
+    background-image: url("https://www.montessoriivyleague.com/wp-content/uploads/2018/10/instagram-logo-circle.png");
+}
