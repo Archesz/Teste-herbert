@@ -23,6 +23,8 @@ import History from '../components/History/History'
 // Dados
 
 import Depoiments from '../Data/depoiments.json'
+import Badge from '../components/Badge/Badge'
+import ProjectCard from '../components/ProjectCard/ProjectCard'
 
 const depoiments = Depoiments["Home"]
 
@@ -149,13 +151,54 @@ function Home() {
                         Fique por dentro ou sugira ideias que ajudem a todos! 
                     </span>
 
+                    <span className='projects-resume'>
+                        Confira alguns dos nossos projetos realizados que podem retornar a qualquer momento.
+                    </span>
+
                     <Button text="Projetos" style="outline big"/>
 
                 </div>
 
                 <div className='projects-right'>
+                    
+                    <span className='projects-right-title'>Alguns Projetos</span>
+                    <span className='projects-right-legend'>Clique em algum de nossos projetos realizados para saber mais sobre ele.</span>
+                    
+                    <div className='projects'>
+
+                        <div className='projects-col'>
+
+                            <ProjectCard name="Programação"/>
+                            <ProjectCard name="Artes"/>
+                            <ProjectCard name="Sarau"/>
+
+                        </div>
+
+                        <div className='projects-col'>
+
+                            <ProjectCard name="EJA"/>
+                            <ProjectCard name="Concursos"/>
+                            <ProjectCard name="Infantil"/>
+
+                        </div>
+
+                        <div className='projects-col'>
+
+                            <ProjectCard name="Debates"/>
+                            <ProjectCard name="Música"/>
+                            <ProjectCard name="Podcast"/>
+
+                        </div>
+
+                    </div>
 
                 </div>
+
+            </div>
+            
+            <div className='faixa-end'>
+
+                    
 
             </div>
 

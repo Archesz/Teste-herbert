@@ -189,6 +189,8 @@ $mainColor: #F8333C;
     background-image: url('../assets/Background3.png');
     background-size: cover;
     padding: 0px 120px;
+    display: flex;
+    flex-direction: row;
 
     .projects-left{
         width: 50%;
@@ -214,6 +216,43 @@ $mainColor: #F8333C;
             font-size: 20px;
             width: 60%;
             margin-bottom: 24px;
+        }
+    }
+
+    .projects-right{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+
+        .projects-right-title{
+            font-weight: bolder;
+            color: #F8333C;
+            font-size: 48px;
+            text-shadow: 4px 4px 10px #191A1A;
+        }
+
+        .projects-right-legend{
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .projects{  
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .projects-col{
+            width: 45%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
     }
 }
