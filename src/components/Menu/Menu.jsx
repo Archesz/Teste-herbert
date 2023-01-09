@@ -43,6 +43,12 @@ function Menu() {
             setTimeout(() => {
                 mobile.classList.toggle("menu-extend")
             }, 390);
+
+            setTimeout(() => {
+                menu.classList.toggle("menu-view")
+                menu.classList.toggle("menu-noview")
+
+            }, 400);
     
             setStatusMenu("show")
         } else{
@@ -51,6 +57,12 @@ function Menu() {
             setTimeout(() => {
                 mobile.classList.toggle("menu-hide")
             }, 390);
+
+            setTimeout(() => {
+                menu.classList.toggle("menu-view")
+                menu.classList.toggle("menu-noview")
+
+            }, 400);
         }
     
     }
@@ -79,7 +91,7 @@ function Menu() {
 
             <div className='menu-mobile' id="menu-mobile">
 
-                <div className='menu-mobile-items' id="menu-mobile-items">
+                <div className='menu-mobile-items menu-noview' id="menu-mobile-items">
                     <span className='menu-item' onClick={menuEnter}>Home</span>
                     <span className='menu-item' onClick={menuEnter}>História</span>
                     <span className='menu-item' onClick={menuEnter}>Projetos</span>
