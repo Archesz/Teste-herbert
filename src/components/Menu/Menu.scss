@@ -7,7 +7,6 @@ $mainColor: #F8333C;
     height: 8vh;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 100px;
     position: fixed;
     z-index: 99;
     margin-top: 60px;
@@ -39,3 +38,100 @@ $mainColor: #F8333C;
     }
 }
 
+@media (min-width: 320px){
+    
+    .menu-container{
+        margin-top: 80px;
+        width: 100%;
+        height: 8vh;
+        
+        .menu-padding{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        
+        .menu-items{
+            display: none;
+        }
+
+        .menu-items-mobile{
+            width: 30px;
+            height: 30px;
+            color: white;
+        }
+    }
+}
+
+.menu-mobile{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    background-color: #191A1A;
+    
+    .menu-mobile-items{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;        
+
+        .menu-item{
+            width: 100%;
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+            padding: 0 20px;
+            border-bottom: 1px solid whitesmoke;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .menu-item:last-of-type{
+            border: none;
+        }
+    }
+}
+
+.animation-extend{
+    animation: expansao .4s;
+}
+
+.animation-hide{
+    animation: supressao .4s;
+}
+
+.menu-extend{
+    height: 320px;
+}
+
+.menu-hide{
+    height: 0px;
+}
+
+/* Animações */
+
+@keyframes expansao{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 320px;
+    }
+}
+
+@keyframes supressao {
+    from{
+        height: 320px;
+    }
+    to{
+        height: 0px;
+    }
+}

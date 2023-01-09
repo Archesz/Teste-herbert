@@ -16,5 +16,9 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
+@media screen and (max-width: 480px){
+
+}

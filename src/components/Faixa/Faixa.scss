@@ -39,3 +39,20 @@
         font-size: 16px;
     }
 }
+
+
+@media (min-width: 320px){
+
+    .faixa-container{
+        height: 70px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+        .faixa-time{
+            display: none;
+        }
+    }
+    
+
+}

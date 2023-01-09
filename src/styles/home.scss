@@ -8,7 +8,7 @@ $mainColor: #F8333C;
     font-weight: bolder;
 }
 
-.home-top{
+/* .home-top{
     background-image: url("../assets/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,11 +51,8 @@ $mainColor: #F8333C;
     }
 
     .home-top-img{
-        height: 100%;
-        margin-left: 200px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
 
         .home-img{
             z-index: 5;
@@ -77,8 +74,10 @@ $mainColor: #F8333C;
 
     }
 }
+*/
 
 .home-mid{
+    display: none;
     z-index: 5;
     background-image: url('../assets/background2.png');
     background-size: cover;
@@ -87,6 +86,7 @@ $mainColor: #F8333C;
 .home-mid-content{
     height: 90vh;
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -136,11 +136,13 @@ $mainColor: #F8333C;
 }
 
 .home-midbot{
+    display: none;
     height: 90vh;
     background-color: #191A1A;
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 
     .more{
         color: white;
@@ -198,6 +200,7 @@ $mainColor: #F8333C;
 }
 
 .home-projects{
+    display: none;
     width: 100%;
     height: 80vh;
     background-image: url('../assets/Background3.png');
@@ -205,6 +208,7 @@ $mainColor: #F8333C;
     padding: 0px 120px;
     display: flex;
     flex-direction: row;
+    display: none;
 
     .projects-left{
         width: 50%;
@@ -279,6 +283,7 @@ $mainColor: #F8333C;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
 
     .faixa-end-name{
         font-weight: bolder;
@@ -306,5 +311,71 @@ $mainColor: #F8333C;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+
+/* Media Screen */
+
+@media (min-width: 320px){
+
+    .home-top{
+        background-image: url("../assets/Background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 122vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .home-top-content{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-top: 80px;
+
+            .home-call{
+                color: white;
+                font-size: 14px;
+                font-style: italic;
+            }
+    
+            .home-title{
+                font-size: 40px;
+                color: white;
+            }
+    
+            .home-subtitle{
+                color: white;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+    
+            .home-top-buttons{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-top: 20px;
+                justify-content: space-between;
+            }
+        }
+    
+        .home-top-img{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 95%;
+
+            .home-img{
+                height: 100%;
+                z-index: 2;
+            }
+    
+            .square{
+                display: none;
+            }
+    
+        }
     }
 }
