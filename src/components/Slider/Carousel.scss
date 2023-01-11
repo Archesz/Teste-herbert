@@ -18,9 +18,19 @@
     }
 
     .carousel-icon{
-        font-size: 32px;
+        font-size: 40px;
         z-index: 20;
     }
+}
+
+.select-area{
+    width: 42px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -17px;
 }
 
 /* Animações */

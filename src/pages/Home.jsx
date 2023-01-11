@@ -4,6 +4,7 @@ import '../styles/home.scss'
 
 import boy from '../assets/blackboy.png'
 import resist from '../assets/DecorationMid.png'
+import logoSimp from '../assets/logoSimp.png'
 
 import unicamp from '../assets/unicamp.png'
 import usp from '../assets/usp.png'
@@ -11,7 +12,6 @@ import ufscar from '../assets/ufscar.png'
 import enem from '../assets/enem.png'
 import cotuca from '../assets/cotuca.png'
 import etec from '../assets/etec.jpg'
-import foto from '../assets/cotuca.png'
 
 import herbertLogo from '../assets/herbertLogo.png'
 
@@ -19,10 +19,7 @@ import Button from '../components/Button/Button'
 import Card from '../components/Card/Card'
 import Faixa from '../components/Faixa/Faixa'
 import History from '../components/History/History'
-
-// Dados
-
-import Depoiments from '../Data/depoiments.json'
+import Carousel from '../components/Slider/Carousel'
 import Badge from '../components/Badge/Badge'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
 import Social from '../components/Social/Social'
@@ -30,8 +27,10 @@ import Beneficio from '../components/Beneficios/Beneficio'
 
 // Icons
 import {AiFillCheckCircle} from 'react-icons/ai'
-import Carousel from '../components/Slider/Carousel'
+import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube} from 'react-icons/fa'
 
+// Dados
+import Depoiments from '../Data/depoiments.json'
 const depoiments = Depoiments["Home"]
 
 /* <ProjectCard name="Programação"/> */
@@ -65,40 +64,6 @@ function Home() {
                 </div>
 
             </div>
-
-            <div className='home-mid'>
-
-                <div className='home-mid-content'>
-                    <span className='text-call'>Lute conosco.</span>
-                    <span className='home-mid-title'>Seu <span className='red'>lugar</span> é na <span className='red'>Universidade!</span></span>
-                    <span className='home-mid-text'>
-                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer aws ferramentas para que possam buscar seus objetivos individuais e coletivos.
-                    </span>
-                    <span className='text-call'>Seu lugar está aqui:</span>
-
-                    <div className='logos-universidades'>
-
-                        <img src={unicamp} className="logo-universidade" alt="" />
-                        <img src={usp} className="logo-universidade usp" alt="" />
-                        <img src={ufscar} className="logo-universidade" alt="" />
-                        <img src={enem} className="logo-universidade" alt="" />
-                        <img src={cotuca} className="logo-universidade" alt="" />
-                        <img src={etec} className="logo-universidade" alt="" />
-
-                    </div>
-
-                    <span className='text-call'>E muito mais.</span>
-                    
-                    <span className='home-mid-text'>
-                        Nossa história é desenhada por lutas e objetivos extensos, onde cada estudante, professor ou colaborador escreva uma nova página sobre o futuro do projeto, conheça nossa história e escreva sua página também.
-                    </span>
-
-                    <Button text="Conhecer" style="outline big"/>
-
-                    <img src={resist} className="resist-logo"/>
-                </div>
-
-            </div>
             
             <div className='beneficios'>
 
@@ -124,6 +89,43 @@ function Home() {
                 <Button text="Entrar agora!" style="full big round long"/>
 
             </div>
+
+            <div className='home-mid'>
+
+                <div className='home-mid-content'>
+                    <span className='text-call'>Lute conosco.</span>
+                    <span className='home-mid-title'>Seu <span className='red'>lugar</span> é na <span className='red'>Universidade!</span></span>
+                    <span className='home-mid-text'>
+                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer aws ferramentas para que possam buscar seus objetivos individuais e coletivos.
+                    </span>
+                    <span className='text-call'>Seu lugar está aqui:</span>
+
+                    <div className='logos-universidades'>
+
+                        <div className='row'>
+                            <img src={usp} className="logo-universidade large" alt="" />
+                            <img src={unicamp} className="logo-universidade" alt="" />
+                            <img src={ufscar} className="logo-universidade" alt="" />
+                        </div>
+
+                        <div className='row'>
+                            <img src={enem} className="logo-universidade large" alt="" />
+                            <img src={cotuca} className="logo-universidade" alt="" />
+                            <img src={etec} className="logo-universidade" alt="" />                        
+                        </div>
+
+                    </div>
+
+                    <span className='text-call'>E muito mais.</span>
+                    
+                    <span className='home-mid-text'>
+                        Nossa história é desenhada por lutas e objetivos extensos, onde cada estudante, professor ou colaborador escreva uma nova página sobre o futuro do projeto, conheça nossa história e escreva sua página também.
+                    </span>
+
+                    <Button text="Conhecer" style="outline big mt-4"/>
+                </div>
+
+            </div>            
 
             <div className='home-projects'>
                 
@@ -154,14 +156,6 @@ function Home() {
 
             </div>
 
-        </div>
-    )
-}
-
-export default Home
-
-/* 
-
             <div className='home-midbot'>
 
                 <div className='home-history'>
@@ -173,10 +167,14 @@ export default Home
 
                 <div className='historys-field'>
 
-                    {depoiments.map((depoiment) => {
-                        return(
-                            <History nome={depoiment["Nome"]} universidade={depoiment["Universidade"]} curso={depoiment["Curso"]} depoimento={depoiment["Depoimento"]}/>
-                        )
+                    <span className='history-span'>Algumas de nossas sementes</span>
+
+                    {depoiments.map((depoiment, index) => {
+                        if(index < 3){
+                            return(
+                                <History nome={depoiment["Nome"]} universidade={depoiment["Universidade"]} curso={depoiment["Curso"]} depoimento={depoiment["Depoimento"]}/>
+                            )
+                        }
                     })}
 
                 </div>
@@ -185,90 +183,27 @@ export default Home
 
             </div>
 
-            <div className='home-projects'>
-                
-                <div className='projects-left'>
-                    
-                    <img src={herbertLogo} className="logo-projects"/>
-
-                    <span className='projects-title'>Para Todos</span>
-                    <span className='projects-resume'>
-                        O Herbert não é apenas um serviço para vestibulares, buscamos alcançar
-                        os principais pilares da sociedade e fornecer o máximo de apoio nas áreas
-                        que somos capacitados. Através de divulgação cultural, educacional, tecnológica
-                        e muitos outros projetos. 
-                        Aulas de programação, desenho, artesanato, preparatório para concursos e muito mais!
-                        Fique por dentro ou sugira ideias que ajudem a todos! 
-                    </span>
-
-                    <span className='projects-resume'>
-                        Confira alguns dos nossos projetos realizados que podem retornar a qualquer momento.
-                    </span>
-
-                    <Button text="Projetos" style="outline big"/>
-
-                </div>
-
-                <div className='projects-right'>
-                    
-                    <span className='projects-right-title'>Alguns Projetos</span>
-                    <span className='projects-right-legend'>Clique em algum de nossos projetos realizados para saber mais sobre ele.</span>
-                    
-                    <div className='projects'>
-
-                        <div className='projects-col'>
-
-                            <ProjectCard name="Programação"/>
-                            <ProjectCard name="Artes"/>
-                            <ProjectCard name="Sarau"/>
-
-                        </div>
-
-                        <div className='projects-col'>
-
-                            <ProjectCard name="EJA"/>
-                            <ProjectCard name="Concursos"/>
-                            <ProjectCard name="Infantil"/>
-
-                        </div>
-
-                        <div className='projects-col'>
-
-                            <ProjectCard name="Debates"/>
-                            <ProjectCard name="Música"/>
-                            <ProjectCard name="Podcast"/>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-            
             <div className='faixa-end'>
                     
                 <span className='faixa-end-name'>Qual foi? Vai deixar mesmo essa oportunidade passar?</span>
-                <span className='faixa-end-subname'>Vamos juntos nessa jornada, conquistar seu espaço!</span>
                 
                 <Button text="Inscrever-se!" style="full big black"/>
 
-                <span className='faixa-end-contact'>Ou entre em contato conosco! Adorariamos ajudar com o que precisar</span>
+            </div>
 
-                <div className='social-field'>
+            <div className='rodape'>
 
-                    <Social social="facebook"/>
-                    <Social social="whatsapp"/>
-                    <Social social="linkedin"/>
-                    <Social social="instagram"/>
-                    <Social social="telefone"/>
-
-                </div>
+                <img src={logoSimp} className='social-img'/>
+                <FaFacebookF className='social'/>
+                <FaTwitter className='social'/>
+                <FaInstagram className='social'/>
+                <FaLinkedinIn className='social'/>
+                <FaYoutube className="social"/>
 
             </div>
 
-            <footer className='footer'>
+        </div>
+    )
+}
 
-            </footer>
-
-*/
+export default Home

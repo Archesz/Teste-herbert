@@ -75,7 +75,9 @@ function Carousel(props) {
     return (
         <div className='carousel-container'>
             
-            <GrFormPrevious className='carousel-icon carousel-prev' onClick={prevCarousel}/>
+            <div className='select-area' onClick={prevCarousel}>
+                <GrFormPrevious className='carousel-icon carousel-prev'/>
+            </div>
 
             <div className='carousel-view'>
 
@@ -96,8 +98,10 @@ function Carousel(props) {
             /> 
 
             </div>
-
-            <GrFormNext className='carousel-icon carousel-next' onClick={nextCarousel}/>
+            
+            <div className='select-area' onClick={nextCarousel}>
+                <GrFormNext className='carousel-icon carousel-next'/>
+            </div>
 
         </div>
     )

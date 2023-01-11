@@ -8,127 +8,6 @@ $mainColor: #F8333C;
     font-weight: bolder;
 }
 
-.home-mid{
-    display: none;
-    z-index: 5;
-    background-image: url('../assets/background2.png');
-    background-size: cover;
-}
-
-.home-mid-content{
-    height: 90vh;
-    display: flex;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px 0px 100px;
-    background-color: rgba(255, 255, 255, 0.85);
-
-    .text-call{
-        font-weight: bold;
-        color: black;
-        font-size: 18px;
-    }
-
-    .home-mid-title{
-        font-size: 60px;
-        font-weight: bolder;
-        margin-bottom: 20px;
-    }
-
-    .home-mid-text{
-        font-size: 22px;
-        width: 70%;
-        text-align: center;
-    }
-
-    .logos-universidades{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        height: 120px;
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 15px;
-
-        .logo-universidade{
-            width: 100px;
-            height: 100px;
-        }
-
-        .usp{
-            width: 140px;
-        }
-    }
-
-    .resist-logo{
-        justify-self: flex-end;
-    }
-}
-
-.home-midbot{
-    height: 90vh;
-    background-color: #191A1A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-
-    .more{
-        color: white;
-        font-weight: bolder;
-        cursor: pointer;
-        text-shadow: 2px 2px 4px white;
-
-        &:hover{
-            color: #F8333C;
-        }
-    }
-
-    .home-history{
-        display: flex;
-        flex-direction: column;
-        padding: 30px 120px;
-
-        .history-name{
-            font-size: 18px;
-            color: white;
-        }
-
-        .history-title{
-            font-size: 48px;
-            font-weight: bolder;
-            color: white;
-            width: 720px;
-        }
-
-        .history-instruct{
-            font-weight: 200;
-            color: whitesmoke;
-            padding-bottom: 16px;
-            margin-top: 6px;
-            border-bottom: 2px solid #f8333dbc;
-            font-style: italic;
-        }
-
-        .history-subtitle{
-            font-size: 18px;
-            color: white;
-            margin-top: 6px;
-        }
-    }
-
-    .historys-field{
-        width: 100%;
-        padding: 0px 120px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
 
 /* 
 .home-projects{
@@ -194,6 +73,7 @@ $mainColor: #F8333C;
 }
 */
 
+/*
 .faixa-end{
     height: 45vh;
     margin-top: 120px;
@@ -232,7 +112,7 @@ $mainColor: #F8333C;
         justify-content: space-around;
     }
 }
-
+*/
 /* Media Screen */
 
 @media (min-width: 320px){
@@ -361,7 +241,7 @@ $mainColor: #F8333C;
     }
 
     .home-projects{
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         background-image: url('../assets/Background3.png');
         background-size: cover;
@@ -393,4 +273,176 @@ $mainColor: #F8333C;
         }
     }
 
+    .home-mid{
+        z-index: 5;
+        background-image: url('../assets/background2.png');
+        background-size: contain;
+        
+        .home-mid-content{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 0 20px;
+
+            .text-call{
+                font-weight: bold;
+                color: black;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        
+            .home-mid-title{
+                font-size: 30px;
+                font-weight: bolder;
+                margin-bottom: 20px;
+            }
+        
+            .home-mid-text{
+                height: auto;
+                width: 100%;
+                font-size: 20px;
+                text-align: center;
+                margin-bottom: 6px;
+            }
+        
+            .logos-universidades{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 170px;
+                margin-top: 20px;
+                
+                .logo-universidade{
+                    width: 60px;
+                    height: 60px;
+                }
+                
+                .large{
+                    width: 90px;
+                }
+            }
+        }
+
+    }
+
+    .home-midbot{
+        height: 110vh;
+        background-color: #191A1A;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        .home-history{
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            .history-name{
+                font-size: 18px;
+                color: white;
+                margin-top: 20px;
+            }
+    
+            .history-title{
+                font-size: 32px;
+                font-weight: bolder;
+                color: white;
+                margin-top: 8px;
+            }
+    
+            .history-instruct{
+                font-weight: 200;
+                color: whitesmoke;
+                padding-bottom: 16px;
+                margin-top: 10px;
+                border-bottom: 1px solid #f8333d72;
+                font-style: italic;
+                font-size: 14px;
+            }
+    
+            .history-subtitle{
+                font-size: 16px;
+                color: white;
+                margin-top: 6px;
+            }
+        }
+    
+        .historys-field{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            .history-span{
+                font-size: 18px;
+                font-weight: bolder;
+                color: white;
+            }
+        }
+
+        .more{
+            color: white;
+            font-weight: bolder;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px white;
+            align-self: center;
+            margin-top: 12px;
+
+            &:hover{
+                color: #F8333C;
+            }
+        }
+    }
+
+    .faixa-end{
+        background-color: #d12932;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 40px;
+
+        .faixa-end-name{
+            font-weight: bolder;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .rodape{
+        height: 80px;
+        width: 100%;
+        background-color: #191A1A;
+        display: flex;
+        flex-direction: row;
+        padding: 0 40px;
+        align-items: center;
+        justify-content: space-around;
+
+        .social-img{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .social{
+            width: 24px;
+            height: 24px;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
 }
