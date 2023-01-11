@@ -34,29 +34,6 @@ import Carousel from '../components/Slider/Carousel'
 
 const depoiments = Depoiments["Home"]
 
-const cards = [
-    {
-        icon: foto,
-        title: 'Planos de Estudos',
-        description: 'Auxiliamos os estudantes a montarem seus planos de estudos baseados em suas necessidades.',
-    },
-    {
-        icon: foto,
-        title: 'Aulas de Qualidade',
-        description: 'Aulas presenciais de todas as disciplinas dos principais vestibulares, atualizadas e com professores atestados.',
-    },
-    {
-        icon: foto,
-        title: 'Ambiente amigável',
-        description: 'Ambiente que incentiva boa convivência, educação, respeito e a não competitividade, promovendo um melhor cenário para estudos.',
-    },
-    {
-        icon: foto,
-        title: 'Tecnologia e Educação',
-        description: 'Uso da tecnologia para realizar monitoramento, acompanhamento e melhoraria na base educacional dos estudantes.',
-    }
-]
-
 /* <ProjectCard name="Programação"/> */
 
 function Home() {

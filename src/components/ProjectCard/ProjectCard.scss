@@ -19,9 +19,9 @@
         .project-name{
             margin-bottom: 20px;
             color: white;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bolder;
-            text-shadow: 2px 2px 4px white;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
         }
     }
 
@@ -29,4 +29,21 @@
         transition: .4s;
         transform: translateX(-4px) translateY(-4px) rotate(-2.5deg);
     }
+}
+
+.card-center {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.card-left {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: -70px;
+}
+  
+.card-right {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: -70px;
 }

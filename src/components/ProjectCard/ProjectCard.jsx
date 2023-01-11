@@ -4,11 +4,11 @@ import './ProjectCard.scss'
 
 function ProjectCard(props) {
     return (
-        <div className='project-card'>
+        <div className={`project-card ${props.class}`}>
             <div className='project-cape'>
                 
                 <span className='project-name'>
-                    {props.name}
+                    {props.title}
                 </span>
             </div>
         </div>    
