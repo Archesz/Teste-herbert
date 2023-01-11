@@ -26,6 +26,10 @@ import Depoiments from '../Data/depoiments.json'
 import Badge from '../components/Badge/Badge'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
 import Social from '../components/Social/Social'
+import Beneficio from '../components/Beneficios/Beneficio'
+
+// Icons
+import {AiFillCheckCircle} from 'react-icons/ai'
 
 const depoiments = Depoiments["Home"]
 
@@ -114,6 +118,39 @@ function Home() {
                 </div>
 
             </div>
+            
+            <div className='beneficios'>
+
+                <div className='beneficios-card'>
+                    <span className='beneficio-title'>Não se sente preparado? Vem com a gente!</span>
+    
+                    <div className='beneficios-list'>
+                        <span className='beneficio-item'><AiFillCheckCircle className="check"/>Aulas de segunda à sexta</span>
+                        <span className='beneficio-item'><AiFillCheckCircle className="check"/>Plantões e Aulas de Reforço</span>
+                        <span className='beneficio-item'><AiFillCheckCircle className="check"/>Simulados</span>
+                        <span className='beneficio-item'><AiFillCheckCircle className="check"/>Material Didático</span>
+                    </div>
+                </div>
+
+                <div className='cards-beneficios'>
+
+                    <Beneficio title="Excelência de Professores" text="Corpo docente altamente qualificado e experiente, com professores experientes, atenciosos e com vivência universitária à compartilhar."/>
+                    <Beneficio title="Suporte e Atenção" text="Foco no suporte individual e independente para diferentes turmas e alunos, fortalecendo seus pontos fortes e auxiliar os pontos fracos."/>
+                    <Beneficio title="Educação Humanizada" text="Valorizar a particuridade, debates e um ambiente social e não competitivo, garantindo qualidade de educação e vivência."/>
+
+                </div>
+
+                <Button text="Entrar agora!" style="full big round long"/>
+
+            </div>
+
+        </div>
+    )
+}
+
+export default Home
+
+/* 
 
             <div className='home-midbot'>
 
@@ -224,8 +261,4 @@ function Home() {
 
             </footer>
 
-        </div>
-    )
-}
-
-export default Home
+*/
