@@ -241,11 +241,11 @@ $mainColor: #F8333C;
     }
 
     .home-projects{
-        height: 90vh;
         width: 100%;
         background-image: url('../assets/Background3.png');
         background-size: cover;
-        padding: 0 40px;
+        padding: 0 20px;
+        padding-bottom: 20px;
 
         .projects-first{
             display: flex;
@@ -267,24 +267,21 @@ $mainColor: #F8333C;
                 margin-top: 6px;
             }
         }
-
-        .projects-second{
-            display: none;
-        }
     }
 
     .home-mid{
         z-index: 5;
         background-image: url('../assets/background2.png');
         background-size: contain;
-        
+        height: auto;
+
         .home-mid-content{
-            height: 100vh;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.85);
-            padding: 0 20px;
+            padding: 20px;
 
             .text-call{
                 font-weight: bold;
@@ -297,6 +294,7 @@ $mainColor: #F8333C;
                 font-size: 30px;
                 font-weight: bolder;
                 margin-bottom: 20px;
+                text-align: center;
             }
         
             .home-mid-text{
@@ -329,12 +327,12 @@ $mainColor: #F8333C;
     }
 
     .home-midbot{
-        height: 110vh;
         background-color: #191A1A;
         display: flex;
         flex-direction: column;
         width: 100%;
-    
+        padding-bottom: 20px;
+
         .home-history{
             display: flex;
             flex-direction: column;

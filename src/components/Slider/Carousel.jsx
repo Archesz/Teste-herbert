@@ -3,9 +3,6 @@ import './Carousel.scss'
 import {GrFormPrevious, GrFormNext} from 'react-icons/gr'
 import ProjectCard from '../ProjectCard/ProjectCard'
 
-/* Images */
-import foto from '../../assets/cotuca.png'
-
 /* Cards */
 
 const projetos = [
@@ -75,33 +72,26 @@ function Carousel(props) {
     return (
         <div className='carousel-container'>
             
-            <div className='select-area' onClick={prevCarousel}>
-                <GrFormPrevious className='carousel-icon carousel-prev'/>
-            </div>
+            <GrFormPrevious className='carousel-icon carousel-prev' onClick={prevCarousel}/>
 
             <div className='carousel-view'>
 
-            <ProjectCard
-              class="card-left"
-              title={projetos[currentLeft].Nome}
-              content={`This is card number ${currentLeft}.`}
-            />
-            <ProjectCard
-              class="card-center"
-              title={projetos[(currentMid)].Nome}
-              content={`This is card number ${(currentMid) % 3}.`}
-            />
-            <ProjectCard
-              class="card-right"
-              title={projetos[(currentRight)].Nome}
-              content={`This is card number ${(currentRight) % 3}.`}
-            /> 
+                <ProjectCard
+                  class="card-left"
+                  title={projetos[currentLeft].Nome}
+                />
+                <ProjectCard
+                  class="card-center"
+                  title={projetos[currentMid].Nome}
+                />
+                <ProjectCard
+                  class="card-right"
+                  title={projetos[currentRight].Nome}
+                /> 
 
             </div>
             
-            <div className='select-area' onClick={nextCarousel}>
-                <GrFormNext className='carousel-icon carousel-next'/>
-            </div>
+            <GrFormNext className='carousel-icon carousel-next' onClick={nextCarousel}/>
 
         </div>
     )
