@@ -30,6 +30,7 @@ import Beneficio from '../components/Beneficios/Beneficio'
 
 // Icons
 import {AiFillCheckCircle} from 'react-icons/ai'
+import Carousel from '../components/Slider/Carousel'
 
 const depoiments = Depoiments["Home"]
 
@@ -53,7 +54,10 @@ const cards = [
         icon: foto,
         title: 'Tecnologia e Educação',
         description: 'Uso da tecnologia para realizar monitoramento, acompanhamento e melhoraria na base educacional dos estudantes.',
-    }]
+    }
+]
+
+/* <ProjectCard name="Programação"/> */
 
 function Home() {
     return (
@@ -141,6 +145,35 @@ function Home() {
                 </div>
 
                 <Button text="Entrar agora!" style="full big round long"/>
+
+            </div>
+
+            <div className='home-projects'>
+                
+                <div className='projects-first'>
+                    
+                    <img src={herbertLogo} className="logo-projects"/>
+
+                    <span className='projects-title'>Para Todos</span>
+                    <span className='projects-resume'>
+                        O Herbert não é apenas um projeto para vestibulares, buscamos impactar
+                        áreas importantes de nossa comunidade e fornecer o máximo de apoio
+                        através de divulgação cultural, educacional, tecnológica, entre outros projetos. 
+                    </span>
+
+                    <span className='projects-resume'>
+                        Confira alguns dos nossos projetos realizados que podem retornar a qualquer momento. 
+                    </span>
+
+                    <span className='projects-resume'>
+                        (Clique e veja mais sobre)
+                    </span>
+
+                    <Carousel />
+
+                    <Button text="Projetos" style="outline big mt-4"/>
+
+                </div>
 
             </div>
 
