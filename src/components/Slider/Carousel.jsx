@@ -25,18 +25,26 @@ function prevCarousel(){
 
 function Carousel(props) {
 
-    const [currentLeft, setCurrentLeft] = useState(0);
-    const [currentMid, setCurrentMid] = useState(1);
-    const [currentRight, setCurrentRight] = useState(2)
-    
-    let size = projetos.length
-    
+    let lastIndex = projetos.length - 1
+
+    const [currentLeft, setCurrentLeft] = useState(lastIndex);
+    const [currentMid, setCurrentMid] = useState(0);
+    const [currentRight, setCurrentRight] = useState(1)
+        
     function prevCarousel(){
 
-        if(currentLeft == 0){
-            setCurrentLeft(size-3)
-            setCurrentMid(size-2)
-            setCurrentRight(size-1)
+        if(currentMid == 0){
+            setCurrentLeft(lastIndex-1)
+            setCurrentMid(lastIndex)
+            setCurrentRight(0)
+        } else if(currentMid == lastIndex){
+            setCurrentLeft(lastIndex-2)
+            setCurrentMid(lastIndex-1)
+            setCurrentRight(lastIndex)
+        } else if(currentMid == 1){
+            setCurrentLeft(lastIndex)
+            setCurrentMid(0)
+            setCurrentRight(1)
         } else{
             setCurrentLeft(index => {
                 return index - 1;
@@ -52,7 +60,15 @@ function Carousel(props) {
 
     function nextCarousel(){
         
-        if(currentRight == size-1){
+        if(currentMid == lastIndex - 1){
+            setCurrentLeft(lastIndex-1)
+            setCurrentMid(lastIndex)
+            setCurrentRight(0)
+        } else if(currentMid == lastIndex){
+            setCurrentLeft(lastIndex)
+            setCurrentMid(0)
+            setCurrentRight(1)
+        } else if(currentMid == 0){
             setCurrentLeft(0)
             setCurrentMid(1)
             setCurrentRight(2)
@@ -79,13 +95,16 @@ function Carousel(props) {
                 <ProjectCard
                   class="card-left"
                   title={projetos[currentLeft].Nome}
+                    n={currentLeft}
                 />
                 <ProjectCard
                   class="card-center"
                   title={projetos[currentMid].Nome}
+                    n={currentMid}
                 />
                 <ProjectCard
                   class="card-right"
+                  n={currentRight}
                   title={projetos[currentRight].Nome}
                 /> 
 

@@ -27,13 +27,36 @@ import Beneficio from '../components/Beneficios/Beneficio'
 
 // Icons
 import {AiFillCheckCircle} from 'react-icons/ai'
-import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube} from 'react-icons/fa'
+import {FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp} from 'react-icons/fa'
 
 // Dados
 import Depoiments from '../Data/depoiments.json'
 const depoiments = Depoiments["Home"]
 
-/* <ProjectCard name="Programação"/> */
+
+// Funções
+
+function goToSocial(rede){
+    if(rede == "Website"){
+        window.open("./")
+    }else if(rede == "Instagram"){
+        window.open("https://www.instagram.com/cursinhoherbertdesouza/", "_blank")
+    } else if(rede == "Whatsapp"){
+        window.open("http://api.whatsapp.com/send?1=pt_BR&phone=5519989809272", "_blank")
+    } else if(rede == "Facebook"){
+        window.open("https://www.facebook.com/herbert.desouza.963", "_blank")
+    } else if(rede == "Linkedin"){
+        window.open("https://www.linkedin.com/", "_blank")
+    } else if(rede == "Youtube"){
+        window.open("https://www.youtube.com", "_blank")
+    }
+}
+
+function goToLink(site){
+    if(site == "Matricula"){
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLSfclXhY6Qn9ZSgqy8qtz5QsQjpbwZq-NgtAGmwBdpI7p7zhrg/viewform?usp=sf_link", "_blank")
+    }
+}
 
 function Home() {
     return (
@@ -52,7 +75,7 @@ function Home() {
                     <span className='home-subtitle'>Prezamos por um ensino, educação e convivência de qualidade para que juntos possamos conquistar nossos espaços.</span>
 
                     <div className='home-top-buttons'>
-                        <Button text="Inscrever-se" style="full big"/>
+                        <Button text="Inscrever-se" style="full big" onClick={() => {goToLink("Matricula")}}/>
                         <Button text="Conhecer" style="outline big"/>
                     </div>
 
@@ -86,7 +109,7 @@ function Home() {
 
                 </div>
 
-                <Button text="Entrar agora!" style="full big round long"/>
+                <Button text="Entrar agora!" style="full big round long"  onClick={() => {goToLink("Matricula")}}/>
 
             </div>
 
@@ -96,7 +119,7 @@ function Home() {
                     <span className='text-call'>Lute conosco.</span>
                     <span className='home-mid-title'>Seu <span className='red'>lugar</span> é na <span className='red'>Universidade!</span></span>
                     <span className='home-mid-text'>
-                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer aws ferramentas para que possam buscar seus objetivos individuais e coletivos.
+                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer ass ferramentas para que possam buscar seus objetivos individuais e coletivos.
                     </span>
                     <span className='text-call'>Seu lugar está aqui:</span>
 
@@ -187,18 +210,18 @@ function Home() {
                     
                 <span className='faixa-end-name'>Qual foi? Vai deixar mesmo essa oportunidade passar?</span>
                 
-                <Button text="Inscrever-se!" style="full big black"/>
+                <Button text="Inscrever-se!" style="full big black"  onClick={() => {goToLink("Matricula")}}/>
 
             </div>
 
             <div className='rodape'>
 
-                <img src={logoSimp} className='social-img'/>
-                <FaFacebookF className='social'/>
-                <FaTwitter className='social'/>
-                <FaInstagram className='social'/>
-                <FaLinkedinIn className='social'/>
-                <FaYoutube className="social"/>
+                <img src={logoSimp} className='social-img' onClick={() => {goToSocial("Website")}}/>
+                <FaFacebookF className='social' onClick={() => {goToSocial("Facebook")}}/>
+                <FaWhatsapp className='social' onClick={() => {goToSocial("Whatsapp")}}/>
+                <FaInstagram className='social' onClick={() => {goToSocial("Instagram")}}/>
+                <FaLinkedinIn className='social' onClick={() => {goToSocial("Linkedin")}}/>
+                <FaYoutube className="social" onClick={() => {goToSocial("Youtube")}}/>
 
             </div>
 
