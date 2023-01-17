@@ -1,0 +1,88 @@
+@media (min-width: 320px) {
+    .about-top{
+        margin-top: 50px;
+        padding: 20px;
+        color: white;
+        background-color: #3a3a3a;
+    
+        .about-title{
+            margin-bottom: 14px;
+            font-weight: bolder;
+        }
+    
+        .about-mintitle{
+            font-weight: bolder;
+            margin-bottom: 6px;
+
+            &:last-of-type{
+                margin-top: 10px;
+            }
+        }
+    
+        .about-fotos-1{
+            width: 100%;
+            height: auto;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+
+            .row{
+                display: flex;
+                flex-direction: row;
+                height: 180px;
+                width: 100%;
+            }
+
+            .foto1{
+                background-color: blue;
+                height: 160px;
+                width: 160px;
+            }
+            .foto2{
+                background-color: yellow;
+                height: 160px;
+                width: 160px;
+            }
+            .foto3{
+                background-color: aquamarine;
+                width: 100%;
+                height: 160px;
+            }
+        }
+
+        .about-area{
+            display: flex;
+            flex-direction: column;
+            
+            .foto4{
+                width: 100%;
+                height: 240px;
+                background-color: pink;
+                margin-bottom: 12px;
+            }
+
+            .foto5{
+                width: 100%;
+                height: 260px;
+                background-color: purple;
+                margin-bottom: 12px;
+            }
+            span{
+                margin-bottom: 12px;
+            }
+        }
+    }   
+
+    .equipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        .equipe-title{
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
+}

@@ -24,8 +24,26 @@ window.onscroll = function(){
     // console.log(`Posição Y: ${window.scrollY}`)
 }
 
-function menuEnter(){
-    alert('ok')
+function goToPage(page){
+    if(page == "Home"){
+        window.location.assign('./')
+    }
+
+    if(page == "About"){
+        window.location.assign('./historia')
+    }
+
+    if(page == "Projetos"){
+        window.location.assign('./projetos')
+    }
+
+    if(page == "Contato"){
+        window.location.assign('./contato')
+    }
+
+    if(page == "Matricula"){
+        window.location.assign('./matricula')
+    }
 }
 
 function Menu() {
@@ -77,11 +95,11 @@ function Menu() {
                 </div>
 
                 <div className='menu-items'>
-                    <span className='menu-item' onClick={menuEnter}>Home</span>
-                    <span className='menu-item' onClick={menuEnter}>História</span>
-                    <span className='menu-item' onClick={menuEnter}>Projetos</span>
-                    <span className='menu-item' onClick={menuEnter}>Contato</span>
-                    <span className='menu-item' onClick={menuEnter}>Inscrição</span>
+                    <span className='menu-item' onClick={() => {goToPage("Home")}}>Home</span>
+                    <span className='menu-item' onClick={() => {goToPage("About")}}>História</span>
+                    <span className='menu-item' onClick={() => {goToPage("Projetos")}}>Projetos</span>
+                    <span className='menu-item' onClick={() => {goToPage("Contato")}}>Contato</span>
+                    <span className='menu-item' onClick={() => {goToPage("Matricula")}}>Inscrição</span>
                 </div>
 
 
@@ -92,11 +110,11 @@ function Menu() {
             <div className='menu-mobile' id="menu-mobile">
 
                 <div className='menu-mobile-items menu-noview' id="menu-mobile-items">
-                    <span className='menu-item' onClick={menuEnter}>Home</span>
-                    <span className='menu-item' onClick={menuEnter}>História</span>
-                    <span className='menu-item' onClick={menuEnter}>Projetos</span>
-                    <span className='menu-item' onClick={menuEnter}>Contato</span>
-                    <span className='menu-item' onClick={menuEnter}>Inscrição</span>
+                    <span className='menu-item' onClick={() => {goToPage("Home")}}>Home</span>
+                    <span className='menu-item' onClick={() => {goToPage("About")}}>História</span>
+                    <span className='menu-item' onClick={() => {goToPage("Projetos")}}>Projetos</span>
+                    <span className='menu-item' onClick={() => {goToPage("Contato")}}>Contato</span>
+                    <span className='menu-item' onClick={() => {goToPage("Matricula")}}>Inscrição</span>
                 </div>
 
             </div>

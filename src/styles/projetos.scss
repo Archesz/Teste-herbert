@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/background2.png');
+    
+    background-repeat: repeat;
+    background-position: center;
+    
+    .projetos-content{
+        margin-top: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;        
+        padding-bottom: 20px;
+
+        .projetos-title{
+            color: white;
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -27,10 +27,10 @@ import Beneficio from '../components/Beneficios/Beneficio'
 
 // Icons
 import {AiFillCheckCircle} from 'react-icons/ai'
-import {FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp} from 'react-icons/fa'
 
 // Dados
 import Depoiments from '../Data/depoiments.json'
+import Footer from '../components/Footer/Footer'
 const depoiments = Depoiments["Home"]
 
 
@@ -52,12 +52,6 @@ function goToSocial(rede){
     }
 }
 
-function goToLink(site){
-    if(site == "Matricula"){
-        window.open("https://docs.google.com/forms/d/e/1FAIpQLSfclXhY6Qn9ZSgqy8qtz5QsQjpbwZq-NgtAGmwBdpI7p7zhrg/viewform?usp=sf_link", "_blank")
-    }
-}
-
 function Home() {
     return (
         <div className='container'>
@@ -75,7 +69,7 @@ function Home() {
                     <span className='home-subtitle'>Prezamos por um ensino, educação e convivência de qualidade para que juntos possamos conquistar nossos espaços.</span>
 
                     <div className='home-top-buttons'>
-                        <Button text="Inscrever-se" style="full big" onClick={() => {goToLink("Matricula")}}/>
+                        <Button text="Inscrever-se" style="full big" function="Matricula"/>
                         <Button text="Conhecer" style="outline big"/>
                     </div>
 
@@ -109,7 +103,7 @@ function Home() {
 
                 </div>
 
-                <Button text="Entrar agora!" style="full big round long"  onClick={() => {goToLink("Matricula")}}/>
+                <Button text="Entrar agora!" style="full big round long"  function="Matricula"/>
 
             </div>
 
@@ -210,21 +204,12 @@ function Home() {
                     
                 <span className='faixa-end-name'>Qual foi? Vai deixar mesmo essa oportunidade passar?</span>
                 
-                <Button text="Inscrever-se!" style="full big black"  onClick={() => {goToLink("Matricula")}}/>
+                <Button text="Inscrever-se!" style="full big black" function="Matricula"/>
 
             </div>
 
-            <div className='rodape'>
-
-                <img src={logoSimp} className='social-img' onClick={() => {goToSocial("Website")}}/>
-                <FaFacebookF className='social' onClick={() => {goToSocial("Facebook")}}/>
-                <FaWhatsapp className='social' onClick={() => {goToSocial("Whatsapp")}}/>
-                <FaInstagram className='social' onClick={() => {goToSocial("Instagram")}}/>
-                <FaLinkedinIn className='social' onClick={() => {goToSocial("Linkedin")}}/>
-                <FaYoutube className="social" onClick={() => {goToSocial("Youtube")}}/>
-
-            </div>
-
+            <Footer />
+            
         </div>
     )
 }

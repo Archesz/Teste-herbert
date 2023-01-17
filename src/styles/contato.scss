@@ -1,0 +1,37 @@
+.container-contato{
+    background-image: url('../assets/backgroundHome.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .content{
+        color: white;
+        margin-top: 60px;
+        padding: 20px; 
+        height: 100%;
+        h2{
+            font-weight: bolder;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .row{
+            margin-top: 12px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+    }
+    h2{
+        font-weight: bolder;
+        color: white;
+        margin-bottom: 8px;
+    }
+    .mapa{
+        width: 100%;
+        border: none;
+        margin-bottom: 20px;
+    }
+}
