@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Aprovados from './pages/Aprovados';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/historia",
     element: <About />
+  },
+  {
+    path: "/aprovados",
+    element: <Aprovados />
   }
 ]);
 

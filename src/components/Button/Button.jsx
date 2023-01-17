@@ -10,7 +10,7 @@ function goToLink(site){
 function Button(props) {
   if(props.function == "Matricula"){
     return (
-      <button className={`btn ${props.style}`} onClick={goToLink}>
+      <button className={`btn ${props.style}`} onClick={() => {goToLink("Matricula")}}>
           {props.text}
       </button>
     )

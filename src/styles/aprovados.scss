@@ -1,0 +1,25 @@
+.container-aprovados{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/Background.png');
+
+    .content-aprovados{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        align-items: center;
+        gap: 14px;
+        padding-bottom: 20px;
+
+        .history-span{
+            font-weight: bolder;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+    }
+}

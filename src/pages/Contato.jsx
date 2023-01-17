@@ -22,7 +22,7 @@ function goToSocial(rede){
 
 function Contato() {
   return (
-    <div className='container'>
+    <div className='container-contato'>
       
       <Faixa />
       <Menu />
@@ -38,11 +38,11 @@ function Contato() {
             <FaYoutube className="social" onClick={() => { goToSocial("Youtube") }} />
         </div>
 
-      </div>
+        <div>
+          <h2>Estamos esperando você aqui:</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.198326739173!2d-47.12104704949066!3d-22.94292198491982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c836633d9479%3A0xf30972041c1f6da5!2sProjeto%20Hebert%20de%20Souza!5e0!3m2!1spt-BR!2sbr!4v1673977382246!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='mapa'></iframe>
+        </div>
 
-      <div>
-        <h2>Estamos esperando você aqui:</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.198326739173!2d-47.12104704949066!3d-22.94292198491982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c836633d9479%3A0xf30972041c1f6da5!2sProjeto%20Hebert%20de%20Souza!5e0!3m2!1spt-BR!2sbr!4v1673977382246!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='mapa'></iframe>
       </div>
 
       <Footer />

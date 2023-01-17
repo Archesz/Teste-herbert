@@ -70,7 +70,7 @@ function Home() {
 
                     <div className='home-top-buttons'>
                         <Button text="Inscrever-se" style="full big" function="Matricula"/>
-                        <Button text="Conhecer" style="outline big"/>
+                        <Button text="Conhecer" style="outline big" onClick={() => window.location.assign('./historia')}/>
                     </div>
 
                 </div>
@@ -139,7 +139,7 @@ function Home() {
                         Nossa história é desenhada por lutas e objetivos extensos, onde cada estudante, professor ou colaborador escreva uma nova página sobre o futuro do projeto, conheça nossa história e escreva sua página também.
                     </span>
 
-                    <Button text="Conhecer" style="outline big mt-4"/>
+                    <Button text="Conhecer" style="outline big mt-4" onClick={() => window.location.assign('./historia')}/>
                 </div>
 
             </div>            
@@ -167,7 +167,7 @@ function Home() {
 
                     <Carousel />
 
-                    <Button text="Projetos" style="outline big mt-4"/>
+                    <Button text="Projetos" style="outline big mt-4" onClick={() => window.location.assign('./projetos')}/>
 
                 </div>
 
@@ -196,7 +196,7 @@ function Home() {
 
                 </div>
 
-                <span className='more'>Ver todos</span>
+                <span className='more' onClick={() => {window.location.assign('./aprovados')}}>Ver todos</span>
 
             </div>
 
