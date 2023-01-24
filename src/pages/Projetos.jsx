@@ -19,9 +19,9 @@ function Projetos() {
 
         <h1 className='projetos-title'>Projetos</h1>
 
-        {ProjetosData.map((projeto) => {
+        {ProjetosData.map((projeto, index) => {
           return(
-            <Projeto status={projeto["Status"]} nome={projeto["Nome"]} descricao={projeto["Descrição"]}/>
+            <Projeto id={projeto["id"]} index={index} autor={projeto["Autor"]} nome={projeto["Nome"]} titulo={projeto["Titulo"]} descricao={projeto["Descrição"]} imagem={projetos["Imagem"]}/>
           )
         })}
 

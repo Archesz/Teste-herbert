@@ -1,0 +1,23 @@
+{
+    "Professores": [
+        {"Nome": "João Vitor Souza ", "Area": "Exatas"},
+        {"Nome": "Lynn Fantinatti", "Area": "Natureza"},
+        {"Nome": "Nicolas Neves", "Area": "Linguagem"},
+        {"Nome": "Asriel David's", "Area": "Natureza"},
+        {"Nome": "Guga ", "Area": "Natureza"},
+        {"Nome": "Helena ", "Area": "Humanas"},
+        {"Nome": "Alice Arbex", "Area": "Natureza"},
+        {"Nome": "Roberto", "Area": "Humanas"},
+        {"Nome": "Wedley", "Area": "Natureza"},
+        {"Nome": "Ana Julia Kuhl", "Area": "Natureza"},
+        {"Nome": "Lucas da Silva", "Area": "Humanas"},
+        {"Nome": "Luquinhas", "Area": "Natureza"},
+        {"Nome": "Matheus Nassif", "Area": "Humanas"},
+        {"Nome": "Bruna Schulte ", "Area": "Natureza"},
+        {"Nome": "Alessandra Bassani", "Area": "Natureza"},
+        {"Nome": "Sansao", "Area": "Natureza"},
+        {"Nome": "Silas Eduardo", "Area": "Coordenação"},
+        {"Nome": "Marcelo", "Area": "Coordenação"},
+        {"Nome": "Carol", "Area": "Coordenação"}
+    ]
+}

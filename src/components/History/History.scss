@@ -1,13 +1,59 @@
 .history-container{
-    width: 280px;
-    height: 100px;
+    width: 340px;
+    height: 180px;
     display: flex;
     flex-direction: row;
     border-radius: 6px;
-    padding: 0px 20px;
     background-color: #484848;
     box-shadow: 4px 4px 6px black;
     cursor: pointer;
+
+    .history-left{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-right: 1px solid white;
+        padding: 15px;
+        background-color: rgb(230, 94, 94);
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+
+        .history-name{
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+        }
+
+        .history-course{
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .history-university{
+            padding: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 3px rgb(243, 180, 44);
+        }
+    }
+
+    .history-right{
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        color: black;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
 
     &:hover{
         transition: .4s;
@@ -43,44 +89,8 @@
             width: 65px;
             height: 65px;
             border-radius: 50%;
-            margin-right: 10px;
             background-color: white;
-            border: 2px solid #3a3a3a;
         }
-
-        .history-text{
-            width: 180px;
-            margin-top: 4px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            .history-name{
-                font-weight: bolder;
-                color: white;
-            }
-
-            .history-course{
-                font-weight: bold;
-                color: white;
-                font-size: 14px;
-            }
-
-            .history-university{
-                padding: 2px;
-                font-size: 14px;
-                font-weight: bold;
-                color: #3581B8;
-            }
-
-            .history-citation{
-                text-align: center;
-                margin-top: 10px;
-                color: black;
-                font-weight: lighter;
-            }
-        }
-
     }
 }
 

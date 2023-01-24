@@ -97,8 +97,8 @@ function Home() {
 
                 <div className='cards-beneficios'>
 
-                    <Beneficio title="Excelência de Professores" text="Corpo docente altamente qualificado e experiente, com professores experientes, atenciosos e com vivência universitária à compartilhar."/>
-                    <Beneficio title="Suporte e Atenção" text="Foco no suporte individual e independente para diferentes turmas e alunos, fortalecendo seus pontos fortes e auxiliar os pontos fracos."/>
+                    <Beneficio title="Adaptabilidade" text="Acreditamos que o ensino deve ser adaptado e atualizado conforme a sociedade caminha, utilizando novas abordagens e tecnologias disponíveis."/>
+                    <Beneficio title="Suporte" text="Foco no suporte individual e independente para diferentes turmas e alunos, fortalecendo seus pontos fortes e auxiliar os pontos fracos."/>
                     <Beneficio title="Educação Humanizada" text="Valorizar a particuridade, debates e um ambiente social e não competitivo, garantindo qualidade de educação e vivência."/>
 
                 </div>
@@ -111,7 +111,7 @@ function Home() {
 
                 <div className='home-mid-content'>
                     <span className='text-call'>Lute conosco.</span>
-                    <span className='home-mid-title'>Seu <span className='red'>lugar</span> é na <span className='red'>Universidade!</span></span>
+                    <span className='home-mid-title'>Seu <span className='red-letter'>lugar</span> é na <span className='red-letter'>Universidade!</span></span>
                     <span className='home-mid-text'>
                         O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer ass ferramentas para que possam buscar seus objetivos individuais e coletivos.
                     </span>

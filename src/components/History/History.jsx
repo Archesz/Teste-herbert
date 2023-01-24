@@ -10,13 +10,20 @@ function History(props) {
             </span>
 
             <div className='history-perfil'>
-                <div className='history-photo'></div>
-
-                <div className='history-text'>
+                
+                <div className='history-left'>
+                    <span className='history-university'>{props.universidade}</span>
+                    <div className='history-photo'></div>
                     <span className="history-name">{props.nome}</span>
                     <span className='history-course'>{props.curso}</span>
-                    <span className='history-university'>{props.universidade}</span>
                 </div>
+
+                <div className='history-right'>
+
+                    "{props.depoimento}"
+
+                </div>
+
             </div>
 
         </div>

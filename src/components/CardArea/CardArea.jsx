@@ -1,25 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Avatar from '../Avatar/Avatar'
 import './CardArea.scss'
-
+import professoresJson from '../../Data/professores.json'
 import { BsChevronCompactDown } from 'react-icons/bs'
 
-function viewMore(color){
-
-    let icon = document.querySelector(`#icon_${color}`);
-    let card = document.querySelector(`#area_${color}`);
-    let more = document.querySelector(`#more_${color}`);
-    
-    card.classList.toggle("expand")
-    icon.style.transform = 'rotate(180deg)';
-    
-    setTimeout(() => {
-        more.classList.toggle("hidden")
-    }, 0.9);
-
-}
+const professores = professoresJson["Professores"]
 
 function CardArea(props) {
+    
+    const [limite, setLimite] = useState(3)
+
+    let count = 0
     return (
         <div className='cardArea-container' id={`area_${props.color}`}>
 
@@ -36,19 +27,16 @@ function CardArea(props) {
                 <span className='cardArea-second-title'>Time</span>
 
                 <div className='cardArea-time'>
-                    <Avatar name="João Vitor" photo="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/multicategory/AboutOurTeachers/prof-3.png"/>
-                    <Avatar name="Barbara" photo="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/multicategory/AboutOurTeachers/prof-5.png"/>
-                    <Avatar name="João Pedro" photo="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/multicategory/AboutOurTeachers/prof-1.png"/>
+                    {professores.map((professor, index) => {
+                        if(professor["Area"] == props.title && count < 5){
+                            count += 1
+                            return(
+                                <Avatar name={professor["Nome"]} photo="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/multicategory/AboutOurTeachers/prof-3.png"/>
+                            )
+                        }
+                    })}
                 </div>
-
-                <div className='more hidden' id={`more_${props.scolor}`}>
-
-                </div>
-
             </div>
-
-            <BsChevronCompactDown className='icon-more' id={`icon_${props.color}`} onClick={() => {viewMore(props.color)}}/>
-
         </div>
     )
 }

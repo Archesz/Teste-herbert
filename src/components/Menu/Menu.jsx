@@ -42,7 +42,7 @@ function goToPage(page){
     }
 
     if(page == "Matricula"){
-        window.location.assign('./matricula')
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLSfclXhY6Qn9ZSgqy8qtz5QsQjpbwZq-NgtAGmwBdpI7p7zhrg/viewform?usp=sf_link", "_blank")
     }
 }
 

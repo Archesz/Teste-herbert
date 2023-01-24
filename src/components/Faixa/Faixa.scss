@@ -13,7 +13,6 @@
         align-items: center;
         justify-content: center;
         width: 170px;
-        margin-right: 20px;
         justify-content: space-around;
 
         .time-field{
@@ -44,15 +43,17 @@
 @media (min-width: 320px){
 
     .faixa-container{
+        width: 100%;
         height: 70px;
         padding: 40px;
         display: flex;
         flex-direction: column;
-
-        .faixa-time{
-            display: none;
-        }
+        align-items: center;
+        justify-content: center;
     }
-    
+
+    .faixa-text{
+        margin-bottom: 4px;
+    }
 
 }
