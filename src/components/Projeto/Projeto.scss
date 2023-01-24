@@ -1,12 +1,11 @@
 .projeto{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 14px;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     align-items: flex-start;
 
     .projeto-row{
