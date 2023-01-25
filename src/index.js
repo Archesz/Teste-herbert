@@ -13,6 +13,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Aprovados from './pages/Aprovados';
+import ComingSoon from './pages/ComingSoon';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/aprovados",
     element: <Aprovados />
+  },
+  {
+    path: "/construcao",
+    element: <ComingSoon />
   }
 ]);
 

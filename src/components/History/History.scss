@@ -1,100 +1,118 @@
-.history-container{
-    width: 340px;
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 6px;
-    background-color: #484848;
-    box-shadow: 4px 4px 6px black;
-    cursor: pointer;
-
-    .history-left{
-        height: 100%;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        border-right: 1px solid white;
-        padding: 15px;
-        background-color: rgb(230, 94, 94);
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-
-        .history-name{
-            font-weight: bolder;
-            color: white;
-            text-align: center;
-        }
-
-        .history-course{
-            font-weight: bold;
-            color: white;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .history-university{
-            padding: 2px;
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 3px rgb(243, 180, 44);
-        }
-    }
-
-    .history-right{
-        padding: 10px;
-        display: flex;
-        align-items: flex-start;
-        width: 60%;
-        height: 100%;
-        background-color: white;
-        color: black;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-    }
-
-    &:hover{
-        transition: .4s;
-        transform: translateX(4px) translateY(-4px);
-    }
-
-    .history-depoiment{
-        display: none;
-        width: 320px;
-        position: absolute;
-        margin-left: 20px;
-        margin-bottom: 120px;
-        background-color: #3a3a3a;
-        padding: 10px;
-        border-radius: 10px;
-        color: white;
-        box-shadow: 4px 4px 6px black;
-        font-style: italic;
-    }
-
-    &:hover .history-depoiment{
-        display: flex;
-    }
-
-    .history-perfil{
-        width: 100%;
+@media (min-width: 320px) {
+    .history-container{
+        width: 300px;
+        height: 180px;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-items: center;
+        border-radius: 6px;
+        background-color: #484848;
+        box-shadow: 4px 4px 6px black;
+        cursor: pointer;
+        text-align: left;
+        .history-left{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-right: 1px solid white;
+            padding: 15px;
+            background-color: rgb(230, 94, 94);
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
     
-        .history-photo{
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            background-color: white;
+            .history-name{
+                font-weight: bolder;
+                color: white;
+                text-align: center;
+            }
+    
+            .history-course{
+                font-weight: 400;
+                color: white;
+                font-size: 14px;
+                text-align: center;
+            }
+    
+            .history-university{
+                padding: 2px;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 2px 2px 3px rgb(243, 180, 44);
+            }
         }
+    
+        .history-right{
+            padding: 10px;
+            display: flex;
+            align-items: flex-start;
+            width: 60%;
+            height: 100%;
+            background-color: white;
+            color: black;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            font-size: 14px;
+        }
+    
+        &:hover{
+            transition: .4s;
+            transform: translateX(4px) translateY(-4px);
+        }
+    
+        .history-depoiment{
+            display: none;
+            width: 320px;
+            position: absolute;
+            margin-left: 20px;
+            margin-bottom: 120px;
+            background-color: #3a3a3a;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 4px 4px 6px black;
+            font-style: italic;
+        }
+    
+        &:hover .history-depoiment{
+            display: flex;
+        }
+    
+        .history-perfil{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+        
+            .history-photo{
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center;
+                border: 1.4px solid black;
+            }
+        }
+    }
+    
+    .footer{
+        height: 45vh;
+        background-color: #1d1d1d;
     }
 }
 
-.footer{
-    height: 45vh;
-    background-color: #1d1d1d;
+@media(min-width: 375px){
+    .history-container{
+        width: 340px;
+    }
 }
+
+
+/* Fotos */
+
+.jovi{background-image: url("../../assets/pessoas/jovi.jpg");}
+.samuelAugusto{background-image: url("../../assets/pessoas/samuelAugusto.jpg");}
+.barbara{background-image: url("../../assets/pessoas/barbara.jpg");}

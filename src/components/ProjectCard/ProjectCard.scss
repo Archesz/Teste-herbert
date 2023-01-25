@@ -2,9 +2,10 @@
     width: 150px;
     height: 150px;
     border-radius: 12px;
-    background-color: #3a3a3a;
     cursor: pointer;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
 
     .project-cape{
         width: 100%;
@@ -13,7 +14,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.35);
         border-radius: 12px;
 
         .project-name{
@@ -62,4 +63,20 @@
 .card-center {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+}
+
+.tech{
+    background-image: url("https://media.istockphoto.com/id/1295900106/pt/foto/data-scientists-male-programmer-using-laptop-analyzing-and-developing-in-various-information.jpg?b=1&s=612x612&w=0&k=20&c=ilzXaots79YYEzstIoNxsPKnc4YsFWFurUAZJqZVTlM=");
+}
+
+.solo{
+    background-image: url("https://media.istockphoto.com/id/1183678932/pt/foto/hand-checking-soil-on-ground-at-vegetable-garden.jpg?s=612x612&w=0&k=20&c=eRqUnu9nikHt7EogqPT7838FTkd_pXCa88xIF6gIph8=");
+}
+
+.saude{
+    background-image: url("https://thumbs.dreamstime.com/b/forma-vermelha-do-cora%C3%A7%C3%A3o-e-estetosc%C3%B3pio-m%C3%A9dico-na-opini%C3%A3o-superior-fundo-azul-conceito-dos-cuidados-m%C3%A9dicos-medicare-da-104679825.jpg");
+}
+
+.podcast{
+    background-image: url("https://s2.glbimg.com/vy2GqLd2c2zjuhbyMdbbgaFvWvM=/0x0:912x608/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/J/L/2eYJfIQtufPHf5ARv2lA/solocast.jpg");
 }

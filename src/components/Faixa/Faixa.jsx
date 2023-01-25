@@ -42,7 +42,7 @@ function Faixa() {
     <div className='faixa-container' id='faixa'>
 
       <div className='faixa-text'>
-        Abertura das inscrições:
+        Abertura das inscrições em:
       </div>
 
       <div className='faixa-time'>

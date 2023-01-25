@@ -91,7 +91,7 @@ function Menu() {
             <div className='menu-padding'>
 
                 <div className='logo'>
-                    <img src={logo} alt="Logo do Projeto Herbert de Souza" className='menu-logo'/>
+                    <img src={logo} alt="Logo do Projeto Herbert de Souza" className='menu-logo' onClick={() => {goToPage("Home")}}/>
                 </div>
 
                 <div className='menu-items'>

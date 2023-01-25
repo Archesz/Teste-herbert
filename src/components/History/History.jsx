@@ -13,7 +13,7 @@ function History(props) {
                 
                 <div className='history-left'>
                     <span className='history-university'>{props.universidade}</span>
-                    <div className='history-photo'></div>
+                    <div className={`history-photo ${props.foto}`}/>
                     <span className="history-name">{props.nome}</span>
                     <span className='history-course'>{props.curso}</span>
                 </div>

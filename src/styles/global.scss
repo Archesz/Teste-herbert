@@ -18,3 +18,27 @@ body{
     padding: 0;
     margin: 0;
 }
+
+.container-coming{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #3a3a3a;
+    flex-direction: column;
+
+    .coming-content{
+        width: 100%;
+        padding: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        span{
+            font-size: 42px;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+    }
+}

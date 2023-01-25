@@ -95,7 +95,7 @@ function About() {
         </div>
 
         <div className='about-company'>
-          <span className='company-title'>Coletivo Popular</span>
+          <span className='company-title'>Parceiros</span>
           <span className='company-subtitle'>Conheça outros projetos populares que atuam em diversas frentes e fortalecem os movimentos que o Herbert acredita:</span>
 
           <div className='company-list'>

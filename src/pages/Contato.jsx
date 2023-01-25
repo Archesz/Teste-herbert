@@ -16,7 +16,7 @@ function goToSocial(rede){
   } else if(rede == "Linkedin"){
       window.open("https://www.linkedin.com/", "_blank")
   } else if(rede == "Youtube"){
-      window.open("https://www.youtube.com", "_blank")
+      window.open("https://www.youtube.com/@cursinhopre-vestibularherb6873", "_blank")
   }
 }
 
@@ -34,7 +34,6 @@ function Contato() {
             <FaFacebookF className='social' onClick={() => { goToSocial("Facebook") }} />
             <FaWhatsapp className='social' onClick={() => { goToSocial("Whatsapp") }} />
             <FaInstagram className='social' onClick={() => { goToSocial("Instagram") }} />
-            <FaLinkedinIn className='social' onClick={() => { goToSocial("Linkedin") }} />
             <FaYoutube className="social" onClick={() => { goToSocial("Youtube") }} />
         </div>
 

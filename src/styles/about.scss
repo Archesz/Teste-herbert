@@ -107,3 +107,25 @@
 
 
 }
+
+@media (min-width: 768px){
+    .about-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .about-cape{
+            height: 100%;
+            width: 90%;
+
+            .about-fotos-1{
+                
+                .foto3{
+                    height: 420px;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Menu from '../components/Menu/Menu'
 import '../styles/home.scss'
 
@@ -52,7 +52,18 @@ function goToSocial(rede){
     }
 }
 
+let n = 3
+
+if(window.screen.width < 500){
+    n = 3
+} else if(window.screen.width >= 500 && window.screen.width < 800){
+    n = 2
+} else{
+    n = 4
+}
+
 function Home() {
+    
     return (
         <div className='container'>
             
@@ -161,13 +172,14 @@ function Home() {
                         Confira alguns dos nossos projetos realizados que podem retornar a qualquer momento. 
                     </span>
 
-                    <span className='projects-resume'>
-                        (Clique e veja mais sobre)
-                    </span>
+                    <div className='projects-cards'>
+                        <ProjectCard class="tech" title="Programação" />
+                        <ProjectCard class="saude" title="Educação e Saúde"/>
+                        <ProjectCard class="podcast" title="Música e Arte"/>
+                        <ProjectCard class="solo" title="Nosso Solo"/>
+                    </div>
 
-                    <Carousel />
-
-                    <Button text="Projetos" style="outline big mt-4" onClick={() => window.location.assign('./projetos')}/>
+                    <Button text="Projetos" style="outline big mt-6" onClick={() => window.location.assign('./projetos')}/>
 
                 </div>
 
@@ -179,24 +191,21 @@ function Home() {
                     <span className='history-name'>Herbert Baobá</span>
                     <span className='history-title'>Mudar o presente para construirmos as raízes do futuro!</span>
                     <span className='history-subtitle'>Não são apenas números, cada nova pessoa que passa pelo Herbert deixa sua marca e sua história. Usamos essas histórias para construirmos raízes fortes para o futuro! </span>
-                    <span className='history-instruct'>Passe o mouse ou Clique sobre os cards para ler um pouco de quem passou por aqui.</span>
                 </div>
 
                 <div className='historys-field'>
-
-                    <span className='history-span'>Algumas de nossas sementes</span>
-
+                    
                     {depoiments.map((depoiment, index) => {
-                        if(index < 3){
+                        if(index < n){
                             return(
-                                <History nome={depoiment["Nome"]} universidade={depoiment["Universidade"]} curso={depoiment["Curso"]} depoimento={depoiment["Depoimento"]}/>
+                                <History nome={depoiment["Nome"]} universidade={depoiment["Universidade"]} curso={depoiment["Curso"]} depoimento={depoiment["Depoimento"]} foto={depoiment["Foto"]}/>
                             )
                         }
                     })}
 
                 </div>
 
-                <span className='more' onClick={() => {window.location.assign('./aprovados')}}>Ver todos</span>
+                <span className='more' onClick={() => {window.location.assign('./construcao')}}>Ver todos</span>
 
             </div>
 

@@ -12,6 +12,7 @@ import '../styles/aprovados.scss'
 const Depoiments = depoiments["Home"]
 
 function Aprovados() {
+  
   return (
     <div className='container-aprovados'>
         <Faixa />

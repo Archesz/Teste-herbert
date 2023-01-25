@@ -18,7 +18,7 @@ function Projetos() {
       <div className='projetos-content'>
 
         <h1 className='projetos-title'>Projetos</h1>
-
+        <span className='subtitle'>Muito mais do que apenas vestibular, prezamos por projetos que possam impactar e colaborar com a comunidade!</span>
         {ProjetosData.map((projeto, index) => {
           return(
             <Projeto id={projeto["id"]} index={index} autor={projeto["Autor"]} nome={projeto["Nome"]} titulo={projeto["Titulo"]} descricao={projeto["Descrição"]} imagem={projetos["Imagem"]}/>
