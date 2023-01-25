@@ -11,8 +11,8 @@ import usp from '../assets/usp.png'
 import ufscar from '../assets/ufscar.png'
 import enem from '../assets/enem.png'
 import cotuca from '../assets/cotuca.png'
-import etec from '../assets/etec.jpg'
-
+import unesp from '../assets/unesp-logo.png'
+import federal from '../assets/if.png'
 import herbertLogo from '../assets/herbertLogo.png'
 
 import Button from '../components/Button/Button'
@@ -124,7 +124,7 @@ function Home() {
                     <span className='text-call'>Lute conosco.</span>
                     <span className='home-mid-title'>Seu <span className='red-letter'>lugar</span> é na <span className='red-letter'>Universidade!</span></span>
                     <span className='home-mid-text'>
-                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer ass ferramentas para que possam buscar seus objetivos individuais e coletivos.
+                        O <span className='bolder'>Projeto Herbert de Souza</span> visa muito mais do que apenas aprovação no vestibular, buscamos incentivar o pensamento e senso crítico nos estudantes e fornecer as ferramentas para que possam buscar seus objetivos individuais e coletivos.
                     </span>
                     <span className='text-call'>Seu lugar está aqui:</span>
 
@@ -133,13 +133,13 @@ function Home() {
                         <div className='row'>
                             <img src={usp} className="logo-universidade large" alt="" />
                             <img src={unicamp} className="logo-universidade" alt="" />
-                            <img src={ufscar} className="logo-universidade" alt="" />
+                            <img src={federal} className="logo-universidade" alt="" />
                         </div>
 
                         <div className='row'>
                             <img src={enem} className="logo-universidade large" alt="" />
+                            <img src={unesp} className="logo-universidade large" alt="" />                        
                             <img src={cotuca} className="logo-universidade" alt="" />
-                            <img src={etec} className="logo-universidade" alt="" />                        
                         </div>
 
                     </div>
@@ -147,7 +147,7 @@ function Home() {
                     <span className='text-call'>E muito mais.</span>
                     
                     <span className='home-mid-text'>
-                        Nossa história é desenhada por lutas e objetivos extensos, onde cada estudante, professor ou colaborador escreva uma nova página sobre o futuro do projeto, conheça nossa história e escreva sua página também.
+                        Nossa história é desenhada por lutas e objetivos extensos, onde cada estudante, professor ou colaborador escreve uma nova página sobre o futuro do projeto. Conheça nossa história e escreva sua página também.
                     </span>
 
                     <Button text="Conhecer" style="outline big mt-4" onClick={() => window.location.assign('./historia')}/>
@@ -163,9 +163,9 @@ function Home() {
 
                     <span className='projects-title'>Para Todos</span>
                     <span className='projects-resume'>
-                        O Herbert não é apenas um projeto para vestibulares, buscamos impactar
+                        O Herbert não é apenas um curso preparatório para vestibulares e vestibulinhos, buscamos impactar
                         áreas importantes de nossa comunidade e fornecer o máximo de apoio
-                        através de divulgação cultural, educacional, tecnológica, entre outros projetos. 
+                        através de divulgação cultural, educacional, tecnológica, entre outros. 
                     </span>
 
                     <span className='projects-resume'>
