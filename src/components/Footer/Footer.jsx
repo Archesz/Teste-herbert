@@ -33,15 +33,19 @@ function Footer() {
 
         <div className='rodape'>
             
-            <img src={logoSimp} className='social-img' onClick={() => { goToSocial("Website") }} />
-            
-            <div className='rodape-content'>
+            <div className='rodape-img'>
+                <img src={logoSimp} className='social-img' onClick={() => { goToSocial("Website") }} />
+                
                 <div className='social-field'>
                     <FaFacebookF className='social' onClick={() => { goToSocial("Facebook") }} />
                     <FaWhatsapp className='social' onClick={() => { goToSocial("Whatsapp") }} />
                     <FaInstagram className='social' onClick={() => { goToSocial("Instagram") }} />
                     <FaYoutube className="social" onClick={() => { goToSocial("Youtube") }} />
                 </div>
+
+            </div>
+
+            <div className='rodape-content'>
 
                 <div className='footer-institucional'>
                     <span className='footer-title'>Institucional</span>
@@ -54,17 +58,26 @@ function Footer() {
 
                 <div className='footer-contato'>
                     <span className='footer-title'>Contato</span>
-                    <div className='footer-contato-line'><AiFillPhone className='icone'/>(19) 98980-9272</div>
-                    <div className='footer-contato-line'><AiOutlineMail className='icone' />cursinhoherbert@gmail.com</div>
-                    <div className='footer-contato-line'><BiMapAlt className='icone map' />R. Dusolina Leone Tournieux, 249 - Parque Res. Vila União, Campinas - SP.</div>
-                    <div className='footer-contato-line'><BiTimeFive className='icone' />Segunda a Sexta feira: 08:00 às 22:30</div>
+                    <div className='footer-contato-line'><AiFillPhone className='icone'/>
+                        <span className='footer-info'>(19) 98980-9272</span>
+                    </div>
+                    <div className='footer-contato-line'><AiOutlineMail className='icone'/>
+                        <span className='footer-info'>cursinhoherbert@gmail.com</span>
+                    </div>
+                    <div className='footer-contato-line'><BiMapAlt className='icone'/>
+                        <span className='footer-info'>R. Dusolina Leone Tournieux, 249 - Parque Res. Vila União, Campinas - SP.</span>
+                    </div>
+                    <div className='footer-contato-line'><BiTimeFive className='icone'/>
+                        <span className='footer-info'>Segunda a Sexta feira: 08:00 às 22:30</span>
+                    </div>
                 </div>
 
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.198326739173!2d-47.12104704949066!3d-22.94292198491982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c836633d9479%3A0xf30972041c1f6da5!2sProjeto%20Hebert%20de%20Souza!5e0!3m2!1spt-BR!2sbr!4v1673977382246!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='map'></iframe>
             </div>
 
+            
             <div className='footer-assinatura'>
-                Desenvolvido por <a className='footer-linktree' href="">@Archs</a>
+                Desenvolvido por <a className='footer-linktree' href="https://linktr.ee/Archsz">@Archs</a>
             </div>
 
         </div>
