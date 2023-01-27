@@ -99,7 +99,7 @@ function Home() {
                     <span className='beneficio-title'>Não se sente preparado? Vem com a gente!</span>
     
                     <div className='beneficios-list'>
-                        <span className='beneficio-item'><AiFillCheckCircle className="check"/>Aulas de segunda à sexta</span>
+                        <span className='beneficio-item'><AiFillCheckCircle className="check"/>Aulas de segunda a sexta</span>
                         <span className='beneficio-item'><AiFillCheckCircle className="check"/>Plantões e Aulas de Reforço</span>
                         <span className='beneficio-item'><AiFillCheckCircle className="check"/>Simulados</span>
                         <span className='beneficio-item'><AiFillCheckCircle className="check"/>Material Didático</span>
@@ -109,8 +109,8 @@ function Home() {
                 <div className='cards-beneficios'>
 
                     <Beneficio title="Adaptabilidade" text="Acreditamos que o ensino deve ser adaptado e atualizado conforme a sociedade caminha, utilizando novas abordagens e tecnologias disponíveis."/>
-                    <Beneficio title="Suporte" text="Foco no suporte individual e independente para diferentes turmas e alunos, fortalecendo seus pontos fortes e auxiliar os pontos fracos."/>
-                    <Beneficio title="Educação Humanizada" text="Valorizar a particuridade, debates e um ambiente social e não competitivo, garantindo qualidade de educação e vivência."/>
+                    <Beneficio title="Suporte" text="Foco no suporte individual e independente para diferentes turmas e alunos, fortalecendo seus pontos fortes e auxiliando nos pontos fracos."/>
+                    <Beneficio title="Educação Humanizada" text="Valorizar a particularidade, debates e um ambiente social e não competitivo, garantindo qualidade de educação e vivência."/>
 
                 </div>
 
